@@ -7,6 +7,8 @@ import Contact from "./components/pages/ContactUs/Contact";
 import Footer from "./components/pages/Footer/Footer";
 import Header from "./components/pages/Header/Header";
 import Blogs from "./components/pages/Blogs/Blogs";
+import CourseDetailPage from "./components/pages/Course/CourseDetailPage";
+import Course from "./components/pages/Course/Course";
 const App = () => {
   return (
     <div>
@@ -18,6 +20,10 @@ const App = () => {
           <Route path="/services" element={<Services />} />
           <Route path="/contact" element={<Contact/>} />
           <Route path="/blogs" element={<Blogs />} />
+          <Route path="/course" element={<Course />} />
+
+
+          <Route path="/course/:courseSlug" element={<CourseDetailPage />} />
         </Routes>
         <Footer />
       </Router>

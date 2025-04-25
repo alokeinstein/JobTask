@@ -16,18 +16,20 @@ const Navigation = () => {
     { name: "About", path: "/about" },
     {
       name: "Courses",
-      path: "/courses",
+      path: "/course",
       subItems: [
-        { name: "Undergraduate", path: "/programs/undergraduate" },
-        { name: "Graduate", path: "/programs/graduate" },
-        { name: "Professional Certificates", path: "/programs/certificates" },
+        { name: "Data Science & AI", path: "/course/dataScience" },
+        { name: "Financial Analytics", path: "/course/financialAnalytics" },
+        { name: "Marketing Analytics", path: "/course/marketingAnalytics" },
+        { name: "HR Analytics", path: "/course/hrAnalytics" },
+        { name: "Web Development", path: "/course/webDevelopment" },
+        { name: "MEAN & MERN", path: "/course/meanMern" },
       ],
     },
     {
       name: "Blogs",
       path: "/blogs",
       subItems: [
-        { name: "Future Students", path: "/admissions/future-students" },
         { name: "International Students", path: "/admissions/international" },
         { name: "How to Apply", path: "/admissions/how-to-apply" },
       ],
