@@ -14,11 +14,11 @@ const AcknowledgementOfCountry = () => {
             </h1>
             
             <p className="text-lg text-gray-700 mb-6">
-              RMIT University acknowledges the people of the Woi wurrung and Boon wurrung language groups of the eastern Kulin Nation on whose unceded lands we conduct the business of the University. RMIT University respectfully acknowledges their Ancestors and Elders, past and present.
+            At the International Institute of Data Intelligence, we recognize that meaningful data science begins with respect - for people, knowledge systems, and the lands from which data emerges. As a premier institution training the next generation of data professionals, we honor this legacy.
             </p>
             
             <p className="text-lg text-gray-700 mb-8">
-              RMIT also acknowledges the Traditional Custodians and their Ancestors of the lands and waters across Australia where we conduct our business.
+            Our programs combine cutting-edge technical training with this foundational respect, because truly intelligent data practice must be both innovative and inclusive.
             </p>
             
             <p className="text-sm italic text-gray-600">

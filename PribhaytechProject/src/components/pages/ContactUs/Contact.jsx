@@ -1,7 +1,13 @@
 import React, { useState } from 'react';
 import flagAustralia from '../../../assets/flagAustralia.png';
-
+import { useLocation } from 'react-router-dom';
+import { useEffect } from 'react';
 const ContactPage = () => {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+      window.scrollTo(0, 0); // Scrolls to the top on route change
+  }, [pathname]);
   const [formData, setFormData] = useState({
     name: '',
     email: '',

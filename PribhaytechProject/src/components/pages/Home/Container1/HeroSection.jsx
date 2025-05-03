@@ -1,7 +1,8 @@
 import React from 'react';
-import heroImage from '../../../../assets/heroImage.png'; // Replace with your actual image path
-
+import heroImage from '../../../../assets/heroImage.png'; 
+import { useNavigate } from 'react-router-dom';
 const HeroSection = () => {
+  const navigate = useNavigate();
   return (
     <div className="relative bg-black text-white min-h-[86vh] flex items-center">
       {/* Decorative elements */}
@@ -24,10 +25,13 @@ const HeroSection = () => {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-              <button className="px-8 py-3 bg-[#b42638] text-white font-semibold rounded hover:bg-[#8a1a2a] transition-all duration-300 shadow-lg hover:shadow-xl">
+              
+              
+              <button className="px-8 py-3 bg-[#b42638] text-white font-semibold rounded hover:bg-[#8a1a2a] transition-all duration-300 shadow-lg hover:shadow-xl z-50" onClick={() => navigate('/course')}>
                 Get Started
               </button>
-              <button className="px-8 py-3 border-2 border-white text-white font-semibold rounded hover:bg-white hover:text-black transition-all duration-300">
+             
+              <button className="px-8 py-3 border-2 border-white text-white font-semibold rounded hover:bg-white hover:text-black transition-all duration-300 z-50" onClick={()=> navigate('/about')}>
                 Learn More
               </button>
             </div>

@@ -7,8 +7,15 @@ import TestimonialsSection from './Container5/Testimonials'
 import StatisticsSection from './Container6/StatisticsSection'
 import Contact from '../ContactUs/Contact'
 // import MapSection from './Container7/MapSection'
+import { useLocation } from 'react-router-dom';
+import { useEffect } from 'react';
 
 const Home = () => {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+      window.scrollTo(0, 0);
+  }, [pathname]);
   return (
     <>
     <HeroSection/>
@@ -18,7 +25,6 @@ const Home = () => {
     <TestimonialsSection/>
     <StatisticsSection/>
     <Contact/>
-    {/* <MapSection/> */}
     </>
   )
 }

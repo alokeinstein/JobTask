@@ -1,8 +1,10 @@
 import React from 'react';
 import { ArrowRight } from 'lucide-react';
 import coursePageHeroGirl from '../../../../assets/course/coursePageHeroGirl.jpg';
+import { useNavigate } from 'react-router-dom';
 
 const HeroSection = () => {
+  const navigate = useNavigate();
   return (
     <section className="relative bg-gradient-to-r from-gray-900 to-[#b42638]/90 text-white overflow-hidden">
       {/* Background pattern */}
@@ -31,7 +33,7 @@ const HeroSection = () => {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4">
-              <button className="flex items-center justify-center px-8 py-4 bg-[#b42638] hover:bg-[#8a1a2a] text-white font-semibold rounded-lg transition-all duration-300 group">
+              <button className="flex items-center justify-center px-8 py-4 bg-[#b42638] hover:bg-[#8a1a2a] text-white font-semibold rounded-lg transition-all duration-300 group" onClick={()=> navigate('/contact')}>
                 Register Now
                 <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
               </button>

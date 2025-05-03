@@ -91,7 +91,17 @@
 
 // export default CourseDetailPage
 
+
+
+
+
+
+
+
+
+
 import React, { useEffect, useState } from "react";
+import { useLocation } from "react-router-dom";
 import { useParams } from "react-router-dom";
 import {
   Check,
@@ -112,11 +122,16 @@ const CourseDetailPage = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    setTimeout(() => {
       setCourse(allCourses[courseSlug]);
       setLoading(false);
-    }, 500);
   }, [courseSlug]);
+
+  
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+      window.scrollTo(0, 0);
+  }, [pathname]);
 
   if (loading) {
     return <div className="text-center py-20">Loading...</div>;
@@ -125,6 +140,7 @@ const CourseDetailPage = () => {
   if (!course) {
     return <div className="text-center py-20">Course not found</div>;
   }
+
 
   return (
     <div className="bg-white">
